@@ -58,5 +58,3 @@ Designul este adaptat pentru orice dispozitiv:
 - layout realizat cu **Flexbox** și **CSS Grid**;
 - redimensionarea automată a imaginilor;
 - meniuri drop-down funcționale și pe ecrane mici.
-
----

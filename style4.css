@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1 , h2 , h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.meniu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.meniu li {
+    list-style: none;
+}
+
+.meniu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+.meniu a:hover {
+    background-color: #575757;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav {
+    background-color: #333;
+    height: 50px;
+    position: relative;
+}
+
+nav > ul.meniu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav > ul.meniu > li {
+    position: relative;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    flex: 1 0 auto;
+}
+
+nav > ul.meniu > li > ul.submeniu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 3;
+}
+
+nav > ul.meniu > li:hover > ul.submeniu {
+    display: block;
+}
+
+ul.submeniu > li {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ul.submeniu > li:hover {
+    background-color: #575757;
+}
+
+nav a {
+    transition: color 1s, background-color 1s;
+}
+
+nav > ul.meniu > li:hover > a {
+    color: rgba(200, 24, 24, 0.568);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #e23636;
+    padding: 20px;
+    text-align:center;
+    border-top: 5px solid #504a4a;
+}
+
+footer>a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #f78f3f;
+    padding: 10px;
+    background-color:#f78f3f;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer>a:hover {
+    font-size:20px;
+    background-color: #db6912;
+}
+
+footer>p {
+    margin-top: 5px;
+}
+
+footer>p::before {
+    content: "۞";
+    color: gold;
+}
+
+footer>p::after {
+    content: "۞";
+    color: gold;
+}
+
+h2::before, h1::before, h1::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('poze/dr-strange_favicon.png');
+    background-size: contain;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+h1{
+    text-align: center;
+}
